@@ -30,7 +30,7 @@ let { src, dest, prependListener } = require('gulp'),
     browsersynk = require('browser-sync').create(),
     fileinclude = require('gulp-file-include'),
     del = require('del'),
-    scss = require('gulp-sass'),
+    scss = require('gulp-sass')(require('sass')),
     autoprefixer = require('gulp-autoprefixer'),
     groupmedia = require('gulp-group-css-media-queries');
 
